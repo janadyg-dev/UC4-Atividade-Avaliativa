@@ -1,0 +1,126 @@
+{
+  "phases": [
+    {
+      "id": "fase-1",
+      "title": "Logística e Gestão",
+      "indicator": 6,
+      "questions": [
+        {
+          "id": "q1-f1",
+          "type": "calculo",
+          "enunciado": "Para um lote de carne bovina, teve-se 10,0 kg PB (Peso Bruto) e 8,5 kg PL (Peso Líquido). Considerando FC = PB / PL, qual o Fator de Correção (FC)?",
+          "meta": "Calcule o FC com duas casas decimais.",
+          "peso": 2,
+          "tolerancia": 0.02,
+          "resposta": 1.17647,
+          "explicacao": "FC = PB / PL = 10,0 / 8,5 ≈ 1,176. O FC é usado para converter peso líquido em bruto nas fichas técnicas."
+        },
+        {
+          "id": "q2-f1",
+          "type": "mcq",
+          "enunciado": "Ao montar uma ficha técnica, qual informação abaixo é ESSENCIAL?",
+          "opcoes": [
+            "Nome do fornecedor + preço por kg",
+            "Lista de ingredientes, rendimento e custo por porção",
+            "Cor preferida do prato"
+          ],
+          "resposta_correta": 1,
+          "peso": 1,
+          "explicacao": "A ficha técnica deve conter lista de ingredientes, rendimento e custo por porção para controle e planejamento."
+        }
+      ]
+    },
+    {
+      "id": "fase-2",
+      "title": "Técnica e Aplicação",
+      "indicator": 9,
+      "questions": [
+        {
+          "id": "q1-f2",
+          "type": "associacao",
+          "enunciado": "Associe o corte ao método de cocção mais indicado:",
+          "pares": [
+            { "item": "Patinho", "resposta": "Calor úmido (ensopar)" },
+            { "item": "Filet mignon", "resposta": "Calor seco (grelhar)" },
+            { "item": "Acém (rico em tecido conjuntivo)", "resposta": "Cozimento lento (calor úmido)" }
+          ],
+          "peso": 2,
+          "explicacao": "Cortes com mais tecido conjuntivo beneficiam-se de calor úmido e cocções lentas para amaciar."
+        },
+        {
+          "id": "q2-f2",
+          "type": "mcq",
+          "enunciado": "Qual método é mais adequado para amaciar um corte rico em colágeno?",
+          "opcoes": ["Calor seco", "Calor úmido", "Micro-ondas"],
+          "resposta_correta": 1,
+          "peso": 1,
+          "explicacao": "O calor úmido hidrolisa colágeno, transformando-o em gelatina e amaciando o corte."
+        }
+      ]
+    },
+    {
+      "id": "fase-3",
+      "title": "Qualidade e Segurança",
+      "indicator": 2,
+      "questions": [
+        {
+          "id": "q1-f3",
+          "type": "sequencia",
+          "enunciado": "Ordene os 5 passos para higienizar uma bancada após o manuseio de frango cru:",
+          "passos": [
+            "Remover restos visíveis e resíduos sólidos",
+            "Enxaguar com água corrente",
+            "Aplicar detergente e esfregar",
+            "Enxaguar para remover sabão",
+            "Aplicar desinfetante e tempo de contato"
+          ],
+          "resposta_correta": [0,2,1,3,4],
+          "peso": 2,
+          "explicacao": "A sequência correta garante remoção física seguida de limpeza química e desinfecção com tempo de contato."
+        },
+        {
+          "id": "q2-f3",
+          "type": "mcq",
+          "enunciado": "Qual a principal razão para separar utensílios para carnes cruas?",
+          "opcoes": ["Evitar mistura de sabores", "Prevenir contaminação cruzada", "Facilitar a limpeza"],
+          "resposta_correta": 1,
+          "peso": 1,
+          "explicacao": "Separar utensílios evita a transferência de microrganismos (contaminação cruzada)."
+        }
+      ]
+    },
+    {
+      "id": "fase-4",
+      "title": "Sustentabilidade",
+      "indicator": 8,
+      "questions": [
+        {
+          "id": "q1-f4",
+          "type": "decisao",
+          "enunciado": "Você tem grande quantidade de aparas e ossos após o pré-preparo. Qual a melhor estratégia para sustentabilidade e aproveitamento?",
+          "opcoes": [
+            "Descartar no lixo comum",
+            "Enviar para compostagem ou produzir caldos/ingredientes (aproveitamento integral)",
+            "Queimar os resíduos"
+          ],
+          "resposta_correta": 1,
+          "peso": 2,
+          "explicacao": "Aproveitamento para caldos e compostagem reduz desperdício e recupera nutrientes, alinhado à sustentabilidade."
+        },
+        {
+          "id": "q2-f4",
+          "type": "mcq",
+          "enunciado": "Qual ação ajuda a reduzir desperdício na UAN?",
+          "opcoes": [
+            "Planejamento de produção e fichas técnicas ajustadas",
+            "Cozinhar em excesso intencionalmente",
+            "Ignorar sobras"
+          ],
+          "resposta_correta": 0,
+          "peso": 1,
+          "explicacao": "Planejamento e fichas técnicas ajustadas reduzem excesso e desperdício."
+        }
+      ]
+    }
+  ]
+}
