@@ -1,0 +1,51 @@
+:root{
+  --accent:#2b6cb0;
+  --bg:#f7fafc;
+  --card:#ffffff;
+  --ok:#2f855a;
+  --bad:#e53e3e;
+  --muted:#718096;
+}
+*{box-sizing:border-box}
+body{
+  font-family:system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  margin:0;
+  background:linear-gradient(180deg,var(--bg),#e6eef8);
+  color:#1a202c;
+  padding:12px;
+}
+header{ text-align:center; margin-bottom:12px;}
+h1{ margin:.2rem 0; font-size:1.4rem; color:var(--accent)}
+.subtitle{ margin:0; color:var(--muted); font-size:.9rem}
+.card{
+  background:var(--card);
+  border-radius:10px;
+  padding:14px;
+  box-shadow:0 6px 18px rgba(2,6,23,.06);
+  margin-bottom:12px;
+}
+.hidden{display:none}
+#phase-buttons{ display:flex; flex-wrap:wrap; gap:8px;}
+.btn{
+  background:var(--accent); color:white; border:none; border-radius:8px;
+  padding:8px 12px; font-weight:600;
+}
+.phase-btn{ background:#3182ce; color:white; padding:10px; border-radius:8px; min-width:140px; text-align:center; cursor:pointer}
+.question-text{ font-weight:600; margin-bottom:8px}
+.options{ display:flex; flex-direction:column; gap:8px}
+.option{ padding:10px; border-radius:8px; background:#f1f5f9; cursor:pointer}
+.option.selected{ outline:3px solid rgba(66,153,225,.15); background:#ebf8ff}
+.feedback{ margin-top:10px; padding:10px; border-radius:8px}
+.feedback.ok{ background:rgba(47,133,90,.08); border:1px solid rgba(47,133,90,.12); color:var(--ok)}
+.feedback.bad{ background:rgba(229,62,62,.06); border:1px solid rgba(229,62,62,.08); color:var(--bad)}
+.small{ font-size:.9rem; color:var(--muted)}
+.sequence-list{ display:flex; flex-direction:column; gap:8px; margin-bottom:8px}
+.seq-item{ padding:10px; background:#fff3bf; border-radius:8px; cursor:grab}
+.match-grid{ display:flex; gap:8px; flex-wrap:wrap}
+.match-item{ padding:10px; background:#e6fffa; border-radius:8px; min-width:130px}
+.input-number{ padding:8px; border:1px solid #cbd5e0; border-radius:6px; width:100%}
+.meta{font-size:.85rem; color:var(--muted); margin-bottom:8px}
+footer{text-align:center; font-size:.8rem; color:var(--muted); margin-top:20px}
+@media (max-width:420px){
+  .phase-btn{min-width:100%}
+}
