@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Missão na UAN — Protótipo UC4</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Missão na UAN</h1>
+    <p class="subtitle">Protótipo: Avaliação formativa — UC4 (Carnes, Ovos e Leite)</p>
+  </header>
+
+  <main id="app">
+    <section id="phase-selection" class="card">
+      <h2>Escolha a Fase</h2>
+      <div id="phase-buttons"></div>
+    </section>
+
+    <section id="question-area" class="card hidden">
+      <div id="question-meta"></div>
+      <div id="question-content"></div>
+      <div id="feedback" class="feedback hidden"></div>
+      <div class="actions">
+        <button id="next-button" class="btn hidden">Próxima</button>
+        <button id="end-phase-button" class="btn hidden">Finalizar Fase</button>
+      </div>
+    </section>
+
+    <section id="phase-summary" class="card hidden">
+      <h3>Resumo da Fase</h3>
+      <div id="phase-results"></div>
+      <button id="back-to-phases" class="btn">Voltar às Fases</button>
+    </section>
+
+    <section id="final-summary" class="card hidden">
+      <h3>Resumo Final</h3>
+      <div id="final-results"></div>
+      <button id="restart-button" class="btn">Reiniciar Missão</button>
+    </section>
+  </main>
+
+  <footer>
+    <small>Protótipo — use para validar mecânicas e conteúdo.</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
